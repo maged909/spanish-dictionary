@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el diccionario español</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="container container-fluid card border-0 p-5 mt-3">
+        <h1>Búsqueda en el diccionario español</h1><br>
+        <div class="d-flex">
+            <input class="form-control" type="text" id="searchInput" placeholder="Introduce una palabra">
+            <div class="mx-3 dropdown">
+                <button class="btn dropdown-toggle" type="button" id="searchOptionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contiene
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="searchOptionDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="changeSearchOption('exact')">Coincidencia exacta</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeSearchOption('contains')">Contiene</a></li>
+                </ul>
+            </div>            
+            <button class="btn btn-dark" onclick="searchDictionary()">Search</button>
+        </div>        
+        <br>
+        <div class="accordion" id="resultsAccordion">
+        </div>
+        <hr>
+        <p class="text-center">derechos de autor Maged 2023 ^^ </p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.bg-img {
+    width: 100%;
+    min-height: 100vh; /* Use min-height instead of height */
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url("assets/images/bg-pattern.jpg");
+    opacity: 0.1; /* Change the opacity here (0.5 means 50% opacity) */
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
